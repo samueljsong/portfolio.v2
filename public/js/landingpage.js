@@ -36,16 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
             lineTimeline.to(lines, {
                 opacity: 0,
                 stagger: 0.08,
-                duration: 0.4,
-                ease: 'power3.inOut'
+                duration: 0.5,
+                ease: 'power3.in'
             }, 1)
         
             lineTimeline.to(lines, {
                 opacity: 1,
                 stagger: 0.08,
-                duration: 0.4,
-                ease: 'power3.inOut'
-            }, 1.4)
+                duration: 0.5,
+                ease: 'power3.in'
+            }, 1.5)
         }
     }, 1.15)
 
