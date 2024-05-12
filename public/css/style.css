@@ -132,6 +132,22 @@ select {
 
 /* Landing Page Section */
 
+.cursor{
+    display: block;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background:linear-gradient(to right, var(--clr-primary), var(--clr-secondary)); */
+    background-color: var(--clr-primary);
+    z-index: 100;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
 nav{
   position: absolute;
   display: flex;
@@ -162,6 +178,7 @@ nav > ul{
 h1{
     line-height: 1;
     word-spacing: -0.1em;
+    z-index: 1;
 }
 
 .landingpage{
