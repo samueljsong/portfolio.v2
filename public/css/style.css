@@ -234,6 +234,44 @@ h1{
 }
 
 
+/* Tech Stack Section */
+
+.techstack{
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+}
+
+.tech-container{
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.express{
+  width: 14rem;
+}
+
+.react{
+  width: 4rem;
+}
+
+.nodejs{
+  width: 7rem;
+}
+
+.tailwind{
+  width: 25rem;
+  height: 3rem;
+}
+
+.gsap{
+  width: 4rem;
+}
 
 @media (max-width: 1534px) {
     .fs-900{font-size: 4rem;}
