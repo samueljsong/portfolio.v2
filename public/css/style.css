@@ -249,28 +249,42 @@ h1{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .express{
-  width: 14rem;
+  height: 4rem;
 }
 
 .react{
-  width: 4rem;
+  width: 5rem;
 }
 
 .nodejs{
-  width: 7rem;
+  width: 5rem;
 }
 
 .tailwind{
-  width: 25rem;
-  height: 3rem;
+  width: 5rem;
 }
 
 .gsap{
-  width: 4rem;
+  width: 5rem;
+}
+
+.next{
+  width: 5rem;
+}
+
+.ts{
+  width: 5rem;
+}
+
+.sql{
+  width: 5rem;
+}
+.mongodb{
+  width: 5rem;
 }
 
 @media (max-width: 1534px) {
