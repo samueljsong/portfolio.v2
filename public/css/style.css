@@ -240,50 +240,37 @@ h1{
   display: grid;
   width: 100%;
   height: 100vh;
-  place-items: center;
+  grid-template-rows: 0.8fr 1.2fr;
 }
 
 .tech-container{
   width: 900px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 4rem;
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.techinfo{
+  display: grid;
+  width: auto;
+  height: 400px;
+  justify-self: center;
+}
+
+.techinfo > h1{
+  margin-top: 4rem;
+  text-align: center;
 }
 
 .express{
   height: 4rem;
 }
 
-.react{
-  width: 5rem;
-}
-
-.nodejs{
-  width: 5rem;
-}
-
-.tailwind{
-  width: 5rem;
-}
-
-.gsap{
-  width: 5rem;
-}
-
-.next{
-  width: 5rem;
-}
-
-.ts{
-  width: 5rem;
-}
-
-.sql{
-  width: 5rem;
-}
-.mongodb{
+.tech{
   width: 5rem;
 }
 
@@ -305,6 +292,19 @@ h1{
 
     .nav-line{
       width: 20%;
+    }
+
+    .tech-container{
+      width: 550px;
+      gap: 2rem;
+    }
+
+    .tech{
+      width: 3.5rem;
+    }
+
+    .express{
+      height: 3rem;
     }
 }
 
@@ -335,5 +335,18 @@ h1{
     .nav-line{
       display: none;
       opacity: 0;
+    }
+
+    .tech-container{
+      width: 300px;
+      gap: 2rem;
+    }
+
+    .tech{
+      width: 3rem;
+    }
+
+    .express{
+      height: 3rem;
     }
 }
