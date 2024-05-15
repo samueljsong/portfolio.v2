@@ -203,7 +203,7 @@ h1 {
 }
 
 footer{
-  position: absolute;
+  position: relative;
   z-index: 10;
   width: 100%;
   display: flex;
@@ -320,6 +320,7 @@ footer > p{
   height: 100vh;
   width: 100%;
   display: grid;
+  grid-template-rows: 0.9fr 0.1fr;
   place-items: center;
 }
 
