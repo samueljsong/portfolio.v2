@@ -7,11 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
         h1.addEventListener('mouseenter', () => {
             cursor.style.opacity = 1;
             document.body.style.cursor = 'none';
+
+            cursor.classList.add('scaled')
         })
 
         h1.addEventListener('mouseleave', () => {
             cursor.style.opacity = 0;
             document.body.style.cursor = 'auto';
+
+            cursor.classList.remove('scaled')
         })
     })
 

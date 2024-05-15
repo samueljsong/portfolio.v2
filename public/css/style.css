@@ -154,8 +154,8 @@ select {
 .cursor {
   display: block;
   position: fixed;
-  height: 150px;
-  width: 150px;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   /* background:linear-gradient(to right, var(--clr-primary), var(--clr-secondary)); */
   background-color: var(--clr-primary);
@@ -164,7 +164,11 @@ select {
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.1s ease-in;
+}
+
+.scaled{
+  transform: scale(14);
 }
 
 nav {
