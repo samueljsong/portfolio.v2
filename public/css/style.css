@@ -108,7 +108,7 @@ select {
   --fw-bold: 700;
 
   --fs-300: 0.8125rem;
-  --fs-400: 0.875rem;
+  --fs-400: 1.1rem;
   --fs-500: 1.3rem;
   --fs-600: 2.5rem;
   --fs-700: 3rem;
@@ -203,15 +203,17 @@ footer{
   position: absolute;
   z-index: 10;
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
   align-self: flex-end;
 }
 
 footer > p{
   color: rgb(128, 128, 128);
   background: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .landingpage {
@@ -375,6 +377,11 @@ footer > p{
 .up{
   width: 1rem;
   background: none;
+}
+
+.contact-icon{
+  width: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 1534px) {
