@@ -467,6 +467,10 @@ footer > p{
   .line-container {
     width: 250px;
   }
+
+  .techstack-text > span{
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 570px) {
@@ -511,5 +515,9 @@ footer > p{
 
   .express {
     height: 3rem;
+  }
+
+  .techstack-text > span{
+    gap: 0.25rem;
   }
 }
