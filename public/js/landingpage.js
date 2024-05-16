@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    t1.to('.landingpage > h1', {
+    t1.to('.landingpage > .landingpage-text-container', {
         opacity: 1,
         duration: 0.3,
         y: -20,
@@ -72,14 +72,26 @@ const adjustHeadingBreak = (windowSize) => {
     }
 }
 
+// const largeHeadingBreak = () => {
+//     let header = document.querySelector('.landingpage h1');
+//     let newHtml = 'A passionate dev making<br><span class="gradient">things</span> on the web.';
+//     header.innerHTML = newHtml;
+// }
+
 const largeHeadingBreak = () => {
     let header = document.querySelector('.landingpage h1');
-    let newHtml = 'A passionate dev making<br><span class="gradient">things</span> on the web.';
+    let newHtml = 'I CREATE THINGS ON THE <span class="gradient">WEB</span>';
     header.innerHTML = newHtml;
 }
 
+// const smallHeadingBreak = () => {
+//     let header = document.querySelector('.landingpage h1');
+//     let newHtml = 'A passionate dev<br>making <span class="gradient">things</span><br>on the web.'
+//     header.innerHTML = newHtml;
+// }
+
 const smallHeadingBreak = () => {
     let header = document.querySelector('.landingpage h1');
-    let newHtml = 'A passionate dev<br>making <span class="gradient">things</span><br>on the web.'
+    let newHtml = 'I CREATE THINGS<br>ON THE <span class="gradient">WEB</span>'
     header.innerHTML = newHtml;
 }

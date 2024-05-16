@@ -1,0 +1,39 @@
+@font-face {
+    font-family: morganite-bold;
+    src: url(../font/morganite/Morganite-Bold.otf);
+}
+
+@font-face {
+    font-family: morganite-book;
+    src: url(../font/morganite/Morganite-Book.otf);
+}
+
+@font-face {
+    font-family: morganite-extrabold;
+    src: url(../font/morganite/Morganite-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: morganite-light;
+    src: url(../font/morganite/Morganite-Light.otf);
+}
+
+@font-face {
+    font-family: morganite-thin;
+    src: url(../font/morganite/Morganite-Thin.otf);
+}
+
+@font-face {
+    font-family: morganite-semibold;
+    src: url(../font/morganite/Morganite-SemiBoldItalic.otf);
+}
+
+@font-face {
+    font-family: fontspring-light;
+    src: url(../font/fontspring/fontspring-light.otf);
+}
+
+@font-face {
+    font-family: fontspring-regular;
+    src: url(../font/fontspring/fontspring-regular.otf);
+}
