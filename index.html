@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fonts.css">
   <title>Samuel Song</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +22,18 @@
   <nav>
     <div class="nav-line"></div>
     <ul>
-      <li><a href="" class="fw-regular fs-400">Projects</a></li>
-      <li><a href="" class="fw-regular fs-400">Resume</a></li>
-      <li><a href="" class="fw-regular fs-400">Contact</a></li>
+      <li><a href="" class="fw-regular fs-400"><p class="nav-text">Projects</p></a></li>
+      <li><a href="" class="fw-regular fs-400"><p class="nav-text">Resume</p></a></li>
+      <li><a href="" class="fw-regular fs-400"><p class="nav-text">Contact</p></a></li>
     </ul>
     <div class="nav-line"></div>
   </nav>
   <main>
     <section class="landingpage">
-      <h1 class="fw-bold fs-900">A passionate dev making <span class="gradient">things</span> on the web.</h1>
+      <div class="landingpage-text-container">
+        <p>SAMUEL SONG</p>
+        <h1 class="fw-bold fs-900">A passionate dev making <span class="gradient">things</span> on the web.</h1>
+      </div>
       <div class="line-container">
         <div class="line"></div>
         <div class="line"></div>
@@ -43,43 +47,46 @@
     </section>
 
     <section class="aboutme">
-      <h1 class="fw-bold fs-900">
-        I'm Sam,<br>
-        a Web <span class="gradient">Developer</span><br>
-        that creates interactive<br><span class="gradient">web</span> applications.
-      </h1>
+      <div class="aboutme-content">
+        <h1 class="fs-800">Hi I'm Sam, a fullstack developer.</h1>
+        <h1 class="fs-800">I craft interactive <span class="gradient">web applications.</span></h1>
+        <div class="techstack-text">
+          <span>
+            <h1 class="fs-800">Here</h1>
+            <h1 class="fs-800">are</h1>
+            <h1 class="fs-800">some</h1>
+            <h1 class="fs-800">of</h1>
+            <h1 class="fs-800">my</h1>
+            <h1 class="fs-800">work</h1>
+          </span>
+          <span>
+            <h1 class="fs-800">and</h1>
+            <h1 class="fs-800">the</h1>
+            <h1 class="fs-800"><span class="gradient">technologies</span></h1>
+            <h1 class="fs-800">I</h1>
+            <h1 class="fs-800">used.</h1>
+          </span>
+        </div>
+      </div>
     </section>
 
-    <section class="techstack">
-      <div class="tech-container">
-        <img class="tech" src="/img/next.svg" alt="">
-        <img class="tech" src="/img/react.svg" alt="">
-        <img class="tech" src="/img/ts.svg" alt="">
-        <img class="tech" src="/img/gsap.svg" alt="">
-        <img class="tech" src="/img/tw.svg" alt="">
-        <img class="express" src="/img/express.svg" alt="">
-        <img class="tech" src="/img/nodejs.svg" alt="">
-        <img class="tech" src="/img/sql.svg" alt="">
-        <img class="tech" src="/img/mongo.svg" alt="">
-      </div>
-      <div class="techinfo">
-        <h1 class="fw-bold fs-900">Using these <br> technologies, I create <br> things like...</h1>
-      </div>
+    <section class="project">
+
     </section>
 
     <section class="contact">
       <div class="contact-info">
         <h1 class="fw-bold fs-900">Let's work together.</h1>
-        <p class="fw-bold fs-500">jsong113@my.bcit.ca</p>
-        <div class="button"><p class="fw-bold fs-500">Contact me.</p></div>
+        <p class="fs-500">jsong113@my.bcit.ca</p>
+        <div class="button"><p class="fs-500">Contact me.</p></div>
       </div>
 
       <div class="totop">
         <img class="up" src="/img/up.svg" alt="">
-        <p>Back to top</p>
+        <p class="fs-500">Back to top</p>
       </div>
       <footer>
-        <p class="fw-bold fs-500">@2024 Samuel Song</p>
+        <p class="fs-500">@2024 Samuel Song</p>
         <a href="https://www.linkedin.com/in/samuel-song-490743234/" target="_blank"><img src="/img/linkedin.svg" alt="" class="contact-icon"></a>
         <a href="https://github.com/samueljsong" target="_blank"><img src="/img/git.svg" alt="" class="contact-icon"></a>
       </footer>
