@@ -359,6 +359,7 @@ footer > p {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .portfolio-card,
