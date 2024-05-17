@@ -12,10 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    t1.to(".aboutme-content > h1", {
-        y: -500,
-        opacity: 0,
-        duration: 1,
+    let t2 = gsap.timeline();
+
+    t2.to(".introduction", {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".introduction",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: 1,
+        },
     });
 
     t1.to(".techstack-text h1", {
