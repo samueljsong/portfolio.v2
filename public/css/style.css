@@ -256,7 +256,7 @@ footer > p {
 .landingpage-text-container > p {
     font-size: 1.5rem;
     letter-spacing: 1rem;
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
 }
 
 .landingpage > h1 {
@@ -347,7 +347,7 @@ footer > p {
 /* Project Section */
 
 .project {
-    height: 700vh;
+    height: 600vh;
     width: 100%;
 }
 
@@ -372,6 +372,7 @@ footer > p {
     width: 40rem;
     border: solid 1px #ece6d5;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .project-card {
@@ -387,10 +388,16 @@ footer > p {
     line-height: 0.8;
 }
 
+.webgl > img {
+    width: 70%;
+}
+
 .webgl {
     width: 80%;
     aspect-ratio: 1/1;
-    /* background-color: #ECE6D5; */
+    display: grid;
+    place-items: center;
+    /* background-color: #ece6d5; */
 }
 
 .project-text {

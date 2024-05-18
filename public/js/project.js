@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(project);
 
     t1.from(".flaker-card", {
-        x: 200,
+        x: 300,
         opacity: 0,
     });
 
@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     t1.to(".flaker-card", {
-        x: -200,
+        x: -300,
         opacity: 0,
     });
 
     t1.from(".greenbanana-card", {
-        x: 200,
+        x: 300,
         opacity: 0,
     });
 
@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     t1.to(".greenbanana-card", {
-        x: -200,
+        x: -300,
         opacity: 0,
     });
 
     t1.from(".portfolio-card", {
-        x: 200,
+        x: 300,
         opacity: 0,
     });
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     t1.to(".portfolio-card", {
-        x: -200,
+        x: -300,
         opacity: 0,
     });
 

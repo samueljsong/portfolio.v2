@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "gsap": "^3.12.5",
-    "split-type": "^0.3.4"
+    "lil-gui": "^0.19.2",
+    "split-type": "^0.3.4",
+    "three": "^0.164.1"
   }
 }
