@@ -107,6 +107,7 @@ select {
     --primary: #131313;
     --secondary: #ebe9e4;
     --accent: #e0b082;
+    --accent2: #70d6c9;
     --tertiary: rgb(128, 128, 128);
 
     --btn-padding: 1rem 2rem 1rem 2rem;
@@ -239,7 +240,7 @@ footer {
     z-index: 10;
     width: 100%;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     align-items: center;
     justify-content: center;
     align-self: flex-end;
@@ -320,6 +321,57 @@ footer > p {
     opacity: 0;
 }
 
+/* Transition card css */
+
+.transition {
+    margin-top: 25vh;
+    display: grid;
+    place-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.transition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transition-container > h3 {
+    font-family: var(--ff-primary);
+    letter-spacing: 0.2rem;
+    background-image: linear-gradient(to right, #f5d4b4, var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 8vw;
+}
+
+.transition-line {
+    height: 15rem;
+    width: 1px;
+    /* background-color: #131313; */
+    background: linear-gradient(0deg, var(--accent), var(--secondary) 80%)
+        no-repeat;
+}
+
+.transition-circle {
+    display: grid;
+    place-items: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    /* background-color: #131313; */
+    background: linear-gradient(90deg, #ffe4ca, var(--accent) 80%);
+}
+
+.transition-circle > h3 {
+    color: var(--secondary);
+    font-family: var(--ff-secondary);
+    font-weight: bold;
+    font-size: 4rem;
+}
+
 /* Introduction */
 .introduction {
     height: 100vh;
@@ -329,6 +381,11 @@ footer > p {
     align-items: center;
     justify-content: center;
     opacity: 0;
+    text-align: center;
+}
+
+.introduction > h1 {
+    font-size: 8vw;
 }
 
 /* About me Section */
@@ -486,6 +543,10 @@ footer > p {
         width: 15%;
     }
 
+    .introduction > h1 {
+        font-size: 9vw;
+    }
+
     .tech-container {
         width: 550px;
         gap: 2rem;
@@ -514,16 +575,65 @@ footer > p {
         font-size: 5rem;
     }
 
+    nav {
+        width: 300px;
+    }
+
+    nav > ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-line {
+        display: none;
+        opacity: 0;
+    }
+
     .landingpage-name-container {
         width: 70%;
     }
 
     .landingpage-name-container > span {
-        font-size: 0.8rem;
+        font-size: 2vw;
     }
 
     .line-container {
         width: 250px;
+    }
+
+    .transition-container > h3 {
+        font-family: var(--ff-primary);
+        letter-spacing: 0.2rem;
+        background-image: linear-gradient(to right, #f5d4b4, var(--accent));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 3rem;
+    }
+
+    .transition-line {
+        height: 7rem;
+        width: 1px;
+        /* background-color: #131313; */
+        background: linear-gradient(0deg, var(--accent), var(--secondary) 80%)
+            no-repeat;
+    }
+
+    .transition-circle {
+        display: grid;
+        place-items: center;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        /* background-color: #131313; */
+        background: linear-gradient(90deg, #ffe4ca, var(--accent) 80%);
+    }
+
+    .transition-circle > h3 {
+        color: var(--secondary);
+        font-family: var(--ff-secondary);
+        font-weight: bold;
+        font-size: 1rem;
     }
 
     .techstack-text > span {
@@ -546,20 +656,6 @@ footer > p {
 
     .line-container {
         width: 200px;
-    }
-
-    nav {
-        width: 300px;
-    }
-
-    nav > ul {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .nav-line {
-        display: none;
-        opacity: 0;
     }
 
     .tech-container {
