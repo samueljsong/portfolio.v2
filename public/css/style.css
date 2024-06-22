@@ -24,7 +24,7 @@
     margin: 0;
     padding: 0;
     font: inherit;
-    color: white;
+    color: var(--primary);
 }
 
 /* Remove default margin */
@@ -39,7 +39,8 @@ blockquote,
 dl,
 dd {
     margin: 0;
-    color: #ece6d5;
+    /* color: #ece6d5; */
+    color: var(--primary);
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -55,7 +56,8 @@ html:focus-within {
 
 html,
 body {
-    background-color: #050c0f;
+    /* background-color: #050c0f; */
+    background-color: var(--secondary);
 }
 
 /* Set core body defaults */
@@ -94,31 +96,42 @@ select {
 }
 
 :root {
+    --ff-heading: heading36;
+    --ff-text: kiona;
+    --ff-bold: humane-bold;
+    --ff-heading2: satoshi-bold;
+
+    --fs-text: 1.2rem;
+    --mfs-text: 0.7rem;
+
+    --primary: #131313;
+    --secondary: #ebe9e4;
+    --accent: #e0b082;
+    --tertiary: rgb(128, 128, 128);
+
+    --btn-padding: 1rem 2rem 1rem 2rem;
+    --mbtn-padding: 0.5rem 1rem 0.5rem 1rem;
+
     /* Colors */
 
-    /* --clr-primary: #0a1b52; */
     --clr-primary: #284083;
-    /* --clr-primary: hsl(103, 86%, 49%); */
-    /* --clr-secondary: hsl(158, 86%, 49%); */
     --clr-secondary: #99f1ed;
 
-    /* fonts */
-    /* --ff-primary: "Inter", sans-serif; */
-    --ff-primary: morganite-bold;
-    --ff-secondary: morganite-light;
+    --ff-primary: heading36;
+    --ff-secondary: kiona;
     --ff-tertiary: fontspring-regular;
     --fw-regular: 400;
     --fw-semibold: 500;
     --fw-bold: 700;
 
     --fs-300: 0.8125rem;
-    --fs-400: 1.1rem;
-    --fs-500: 1.7rem;
+    --fs-400: 1rem;
+    --fs-500: 1rem;
     --fs-600: 2.5rem;
     --fs-700: 3rem;
-    --fs-800: 10rem;
-    /* --fs-900: 6rem; */
-    --fs-900: 15rem;
+    --fs-800: 7rem;
+    --fs-900: 12rem;
+    --fs-1000: 14vw;
 }
 
 /* Utility Classes */
@@ -152,6 +165,10 @@ select {
 }
 .fs-900 {
     font-size: var(--fs-900);
+}
+
+.fs-1000 {
+    font-size: var(--fs-1000);
 }
 
 /* Landing Page Section */
@@ -199,21 +216,21 @@ nav > ul {
 
 .nav-text {
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
     letter-spacing: 4px;
+    font-weight: bold;
 }
 
 .nav-line {
     height: 1px;
     background-color: rgb(128, 128, 128);
-    width: 30%;
+    width: 25%;
 }
 
 h1 {
     line-height: 1;
     /* word-spacing: -0.1em; */
     z-index: 1;
-    color: #ece6d5;
+    /* color: #ece6d5; */
     font-family: var(--ff-primary);
 }
 
@@ -253,10 +270,17 @@ footer > p {
     opacity: 0;
 }
 
-.landingpage-text-container > p {
-    font-size: 1.5rem;
+.landingpage-name-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingpage-name-container > span {
+    font-size: 1rem;
     letter-spacing: 1rem;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-text);
+    font-weight: bold;
 }
 
 .landingpage > h1 {
@@ -346,71 +370,6 @@ footer > p {
 
 /* Project Section */
 
-.project {
-    height: 600vh;
-    width: 100%;
-}
-
-.slider {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-}
-
-.portfolio-card,
-.greenbanana-card,
-.flaker-card {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40rem;
-    border: solid 1px #ece6d5;
-    gap: 1rem;
-    cursor: pointer;
-}
-
-.project-card {
-    opacity: 1;
-}
-
-.project-title-container {
-    width: 95%;
-}
-
-.project-title {
-    margin-top: 1rem;
-    line-height: 0.8;
-}
-
-.webgl > img {
-    width: 70%;
-}
-
-.webgl {
-    width: 80%;
-    aspect-ratio: 1/1;
-    display: grid;
-    place-items: center;
-    /* background-color: #ece6d5; */
-}
-
-.project-text {
-    font-family: fontspring-regular;
-}
-
-.extra-info {
-    width: 95%;
-    margin-bottom: 1rem;
-    display: flex;
-    gap: 1rem;
-}
-
 /* Contact Section */
 .contact {
     height: 100vh;
@@ -431,15 +390,16 @@ footer > p {
 
 .contact-info > p {
     color: rgb(168, 167, 167);
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     letter-spacing: 0.1rem;
+    font-weight: bold;
 }
 
 .button {
     height: 3rem;
     width: 10rem;
     background: none;
-    border: solid 1px #ece6d5;
+    border: solid 1px var(--primary);
     display: grid;
     place-items: center;
     border-radius: 15px;
@@ -449,14 +409,14 @@ footer > p {
 
 .button > p {
     background: none;
-    font-family: var(--ff-primary);
-    letter-spacing: 0.1rem;
+    font-family: var(--ff-secondary);
+    font-weight: bold;
 }
 
 .totop {
     position: relative;
     height: 4rem;
-    width: 7rem;
+    width: 6rem;
     border-radius: 15px;
     cursor: pointer;
     align-self: flex-end;
@@ -465,6 +425,7 @@ footer > p {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    border: solid 1px var(--primary);
 }
 
 .totop:hover {
@@ -473,8 +434,8 @@ footer > p {
 
 .totop > p {
     background: none;
-    font-family: var(--ff-primary);
-    letter-spacing: 0.1rem;
+    font-family: var(--ff-secondary);
+    font-weight: bold;
 }
 
 .up {
@@ -487,7 +448,15 @@ footer > p {
     margin-bottom: 1.5rem;
 }
 
+footer > p {
+    font-family: var(--ff-secondary);
+    font-weight: bold;
+}
+
 @media (max-width: 1534px) {
+    /* .fs-1000 {
+        font-size: var(--fs-900);
+    } */
     .fs-900 {
         font-size: 9rem;
     }
@@ -509,8 +478,12 @@ footer > p {
         justify-content: center;
     }
 
+    .nav-text {
+        font-size: 0.8rem;
+    }
+
     .nav-line {
-        width: 20%;
+        width: 15%;
     }
 
     .tech-container {
@@ -525,15 +498,13 @@ footer > p {
     .express {
         height: 3rem;
     }
-
-    .portfolio-card,
-    .greenbanana-card,
-    .flaker-card {
-        width: 30rem;
-    }
 }
 
 @media (max-width: 800px) {
+    .fs-1000 {
+        font-size: 17vw;
+    }
+
     .fs-900 {
         font-size: 8rem;
         text-align: center;
@@ -543,18 +514,20 @@ footer > p {
         font-size: 5rem;
     }
 
+    .landingpage-name-container {
+        width: 70%;
+    }
+
+    .landingpage-name-container > span {
+        font-size: 0.8rem;
+    }
+
     .line-container {
         width: 250px;
     }
 
     .techstack-text > span {
         gap: 0.5rem;
-    }
-
-    .portfolio-card,
-    .greenbanana-card,
-    .flaker-card {
-        width: 25rem;
     }
 }
 
@@ -604,11 +577,5 @@ footer > p {
 
     .techstack-text > span {
         gap: 0.25rem;
-    }
-
-    .portfolio-card,
-    .greenbanana-card,
-    .flaker-card {
-        max-width: 90%;
     }
 }
