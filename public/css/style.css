@@ -581,6 +581,7 @@ footer > p {
 
     nav > ul {
         width: 100%;
+        gap: 0.8rem;
         justify-content: center;
     }
 
@@ -601,43 +602,43 @@ footer > p {
         width: 250px;
     }
 
+    .transition-no-margin {
+        margin-top: 0;
+    }
+
     .transition-container > h3 {
-        font-family: var(--ff-primary);
-        letter-spacing: 0.2rem;
-        background-image: linear-gradient(to right, #f5d4b4, var(--accent));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
         font-size: 3rem;
     }
 
     .transition-line {
         height: 7rem;
-        width: 1px;
-        /* background-color: #131313; */
-        background: linear-gradient(0deg, var(--accent), var(--secondary) 80%)
-            no-repeat;
     }
 
     .transition-circle {
-        display: grid;
-        place-items: center;
         height: 4rem;
         width: 4rem;
-        border-radius: 50%;
-        /* background-color: #131313; */
-        background: linear-gradient(90deg, #ffe4ca, var(--accent) 80%);
     }
 
     .transition-circle > h3 {
-        color: var(--secondary);
-        font-family: var(--ff-secondary);
-        font-weight: bold;
         font-size: 1rem;
     }
 
     .techstack-text > span {
         gap: 0.5rem;
+    }
+
+    .regular-text {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        height: 3rem;
+        width: 7rem;
+    }
+
+    .totop {
+        width: 4rem;
+        height: 3rem;
     }
 }
 
@@ -648,10 +649,6 @@ footer > p {
 
     .fs-800 {
         font-size: 3rem;
-    }
-
-    .fs-500 {
-        font-size: 1.1rem;
     }
 
     .line-container {
