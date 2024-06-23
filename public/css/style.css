@@ -330,6 +330,10 @@ footer > p {
     width: 100%;
 }
 
+.transition-no-margin {
+    margin-top: 0;
+}
+
 .transition-container {
     display: flex;
     flex-direction: column;
