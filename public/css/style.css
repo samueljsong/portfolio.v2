@@ -279,7 +279,6 @@ footer > p {
 
 .landingpage-name-container > span {
     font-size: 1rem;
-    letter-spacing: 1rem;
     font-family: var(--ff-text);
     font-weight: bold;
 }
@@ -344,7 +343,7 @@ footer > p {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 .transition-line {
@@ -385,7 +384,7 @@ footer > p {
 }
 
 .introduction > h1 {
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 /* About me Section */
@@ -423,6 +422,7 @@ footer > p {
 
 .techstack-text > span > h1 {
     opacity: 0;
+    font-size: 6vw;
 }
 
 /* Project Section */
@@ -443,6 +443,7 @@ footer > p {
     text-align: center;
     align-items: center;
     opacity: 0;
+    margin-top: 5vh;
 }
 
 .contact-info > p {
@@ -543,10 +544,6 @@ footer > p {
         width: 15%;
     }
 
-    .introduction > h1 {
-        font-size: 9vw;
-    }
-
     .tech-container {
         width: 550px;
         gap: 2rem;
@@ -563,7 +560,7 @@ footer > p {
 
 @media (max-width: 800px) {
     .fs-1000 {
-        font-size: 17vw;
+        font-size: 16vw;
     }
 
     .fs-900 {
@@ -591,7 +588,7 @@ footer > p {
     }
 
     .landingpage-name-container {
-        width: 70%;
+        width: 60%;
     }
 
     .landingpage-name-container > span {
@@ -600,6 +597,10 @@ footer > p {
 
     .line-container {
         width: 250px;
+    }
+
+    .introduction > h1 {
+        font-size: 9vw;
     }
 
     .transition-no-margin {
@@ -621,6 +622,10 @@ footer > p {
 
     .transition-circle > h3 {
         font-size: 1rem;
+    }
+
+    .techstack-text > span > h1 {
+        font-size: 9vw;
     }
 
     .techstack-text > span {
@@ -653,6 +658,10 @@ footer > p {
 
     .line-container {
         width: 200px;
+    }
+
+    .nav-text {
+        font-size: 3vw;
     }
 
     .tech-container {
