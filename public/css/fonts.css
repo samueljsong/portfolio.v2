@@ -90,15 +90,30 @@
 
 @font-face {
     font-family: satoshi-bold;
-    src: url(../../public/font/Satoshi-Bold.woff2);
+    src: url(/font/Satoshi-Bold.woff2);
 }
 
 @font-face {
     font-family: satoshi;
-    src: url(../../public/font/Satoshi-Black.woff2);
+    src: url(/font/Satoshi-Black.woff2);
 }
 
 @font-face {
     font-family: satoshi-medium;
-    src: url(/fonts/Satoshi-Medium.woff2);
+    src: url(/font/Satoshi-Medium.woff2);
+}
+
+@font-face {
+    font-family: telegraf;
+    src: url(/font/PPTelegraf-Regular.woff);
+}
+
+@font-face {
+    font-family: telegraf-ub;
+    src: url(/font/PPTelegraf-UltraBold.woff);
+}
+
+@font-face {
+    font-family: telegraf-ul;
+    src: url(/font/PPTelegraf-UltraLight.woff);
 }
