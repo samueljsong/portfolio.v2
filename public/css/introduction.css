@@ -1,0 +1,86 @@
+.introduction {
+    margin-top: 25vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    text-align: center;
+}
+
+.introduction-info {
+    z-index: 5;
+    padding: 2rem;
+    background-color: #efede9;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.introduction-icon-container {
+    z-index: 1;
+    position: absolute;
+    display: grid;
+    width: 65vw;
+    height: 65vw;
+}
+
+.react-icon,
+.js-icon,
+.sql-icon {
+    position: absolute;
+}
+
+.react-text {
+    color: var(--khaki);
+}
+
+.js-text {
+    color: var(--khaki2);
+}
+
+.sql-text {
+    color: var(--khaki3);
+}
+
+.react-icon {
+    width: 35vw;
+    top: 10%;
+    z-index: 2;
+    rotate: 15deg;
+}
+
+.js-icon {
+    left: 16%;
+    width: 40vw;
+    display: grid;
+}
+
+.sql-icon {
+    width: 23vw;
+    rotate: -25deg;
+    top: 16%;
+    z-index: 2;
+    right: 4%;
+}
+
+@media (max-width: 1534px) {
+}
+
+@media (max-width: 800px) {
+    .introduction-icon-container {
+        width: 65vw;
+        height: 70vw;
+    }
+
+    .introduction-info {
+        padding: 3vw;
+    }
+}
+
+@media (max-width: 570px) {
+    .introduction-info > h1 {
+        font-size: 5vw;
+    }
+}

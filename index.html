@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/fonts.css" />
+        <link rel="stylesheet" href="./css/landing.css" />
+        <link rel="stylesheet" href="./css/introduction.css" />
+        <link rel="stylesheet" href="./css/background.css" />
+        <link rel="stylesheet" href="./css/project.css" />
         <title>Samuel Song</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +23,6 @@
         <script src="https://unpkg.com/split-type"></script>
     </head>
     <body>
-        <!-- <div class="cursor"></div> -->
-
         <nav>
             <div class="nav-line"></div>
             <ul>
@@ -43,35 +45,18 @@
             <div class="nav-line"></div>
         </nav>
         <main>
-            <section class="landingpage">
-                <div class="landingpage-text-container">
-                    <!-- <div class="landingpage-name-container">
-                        <span>S</span>
-                        <span>A</span>
-                        <span>M</span>
-                        <span>U</span>
-                        <span>E</span>
-                        <span>L</span>
-                        <span>S</span>
-                        <span>O</span>
-                        <span>N</span>
-                        <span>G</span>
-                    </div> -->
-                    <h1 class="fw-bold fs-1000">I BUILD SOFTWARE</h1>
-                </div>
-                <div class="line-container">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+            <section class="landing">
+                <div class="landing-container">
+                    <div class="info-text-container text">PORTFOLIO</div>
+                    <h1 class="landing-title heading">SAMUEL</h1>
+                    <div class="btn landing-btn">
+                        <p class="text">SCROLL</p>
+                        <img src="/img/darrow.svg" alt="" />
+                    </div>
                 </div>
             </section>
 
-            <section class="transition">
+            <!-- <section class="transition">
                 <div class="transition-container">
                     <span class="transition-line"></span>
                     <div class="transition-circle">
@@ -79,15 +64,27 @@
                     </div>
                     <h3 class="fs-700">ABOUT</h3>
                 </div>
-            </section>
+            </section> -->
 
             <section class="introduction">
-                <h1 class="fs-800">Hi I'm Sam, a software developer.</h1>
-                <h1 class="fs-800">I specialize in working with the web.</h1>
-                <h1 class="fs-800">My favourite technologies are</h1>
+                <div class="introduction-icon-container">
+                    <img class="react-icon" src="/img/react-g.svg" alt="" />
+                    <img class="js-icon" src="/img/js-g.svg" alt="" />
+                    <img class="sql-icon" src="/img/sql-g.svg" alt="" />
+                </div>
+
+                <div class="introduction-info">
+                    <h1 class="fs-800">Hi I'm Sam, a software developer.</h1>
+                    <h1 class="fs-800">My favourite technologies are</h1>
+                    <h1 class="fs-800">
+                        <span class="react-text">React</span>,
+                        <span class="js-text">JavaScript</span>, and
+                        <span class="sql-text">SQL</span>.
+                    </h1>
+                </div>
             </section>
 
-            <section class="transition transition-no-margin">
+            <!-- <section class="transition transition-no-margin">
                 <div class="transition-container">
                     <span class="transition-line"></span>
                     <div class="transition-circle">
@@ -95,7 +92,7 @@
                     </div>
                     <h3 class="fs-800">PROJECTS</h3>
                 </div>
-            </section>
+            </section> -->
 
             <section class="aboutme">
                 <div class="aboutme-content">
@@ -103,9 +100,8 @@
                         <span>
                             <h1 class="fs-800">Here</h1>
                             <h1 class="fs-800">are</h1>
-                            <h1 class="fs-800">some</h1>
-                            <h1 class="fs-800">of</h1>
                             <h1 class="fs-800">my</h1>
+                            <h1 class="fs-800">recent</h1>
                             <h1 class="fs-800">work</h1>
                         </span>
                         <span>
@@ -128,12 +124,14 @@
                         <div class="project-information">
                             <h3 class="text">Portfolio Site</h3>
                             <p class="text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nihil autem nam aliquid in
-                                neque tenetur inventore temporibus, molestiae
-                                dicta tempore debitis sed corrupti magni iste
+                                Created an interactive, responsive portfolio
+                                website using JavaScript and GSAP to implement
+                                animations.
                             </p>
-                            <div class="project-techstack"></div>
+                            <div class="project-techstack">
+                                <div class="text">GSAP</div>
+                                <div class="text">JS</div>
+                            </div>
                         </div>
                     </div>
                     <div class="project-year p1-year text">2024</div>
@@ -145,12 +143,16 @@
                         <div class="project-information">
                             <h3 class="text">Flaker</h3>
                             <p class="text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nihil autem nam aliquid in
-                                neque tenetur inventore temporibus, molestiae
-                                dicta tempore debitis sed corrupti magni iste
+                                Calendar web application for making plans with
+                                friends. Add friends, create groups, and start
+                                adding events.
                             </p>
-                            <div class="project-techstack"></div>
+                            <div class="project-techstack">
+                                <div class="text">MongoDB</div>
+                                <div class="text">Express</div>
+                                <div class="text">React</div>
+                                <div class="text">NodeJS</div>
+                            </div>
                         </div>
                     </div>
 
@@ -163,12 +165,15 @@
                         <div class="project-information">
                             <h3 class="text">Green Banana</h3>
                             <p class="text">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nihil autem nam aliquid in
-                                neque tenetur inventore temporibus, molestiae
-                                dicta tempore debitis sed corrupti magni iste
+                                Web application similar to imgur. It is an
+                                online image, link, and code snippet sharing
+                                service.
                             </p>
-                            <div class="project-techstack"></div>
+                            <div class="project-techstack">
+                                <div class="text">SQL</div>
+                                <div class="text">NodeJS</div>
+                                <div class="text">Express</div>
+                            </div>
                         </div>
                     </div>
                     <div class="project-year p3-year text">2023</div>
@@ -182,7 +187,7 @@
                 </div>
             </section>
 
-            <section class="transition">
+            <!-- <section class="transition">
                 <div class="transition-container">
                     <span class="transition-line"></span>
                     <div class="transition-circle">
@@ -190,7 +195,7 @@
                     </div>
                     <h3 class="fs-700">CONTACT</h3>
                 </div>
-            </section>
+            </section> -->
 
             <section class="contact">
                 <div class="contact-info">
@@ -221,10 +226,6 @@
                 </footer>
             </section>
         </main>
-
-        <!-- <script src="/js/threejs.js"></script> -->
-
-        <!-- <script type="module" src="./public/js/threejs.js"></script> -->
 
         <script src="/js/project.js"></script>
         <script src="/js/contact.js"></script>

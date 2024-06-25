@@ -1,0 +1,121 @@
+.btn {
+    padding: var(--btn-padding);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.heading {
+    font-family: var(--ff-heading);
+    color: var(--primary);
+    line-height: 100%;
+}
+
+.heading2 {
+    font-family: var(--ff-heading2);
+    color: var(--primary);
+    line-height: 100%;
+}
+
+/* Landing Section */
+
+.landing {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.landing-title {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 25vw;
+    background: none;
+    user-select: none;
+    line-height: 90%;
+}
+
+.info-text-container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: var(--primary);
+}
+
+.char {
+    display: inline-block;
+    background: none;
+}
+
+.landing-btn {
+    background: none;
+    /* border: solid 1px var(--primary);
+    border-radius: 50px; */
+    /* letter-spacing: 0.2rem; */
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-btn > img {
+    width: 1rem;
+}
+
+.copyright {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    width: 20rem;
+    height: 4rem;
+    bottom: 0;
+    display: flex;
+    font-family: var(--ff-text);
+    font-weight: bold;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    line-height: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+
+.copyright > p {
+    color: var(--tertiary);
+}
+
+.contact-icon-1 {
+    width: 2rem;
+}
+
+@media (max-width: 570px) {
+    .line-container {
+        width: 200px;
+    }
+
+    .btn {
+        padding: var(--mbtn-padding);
+    }
+
+    .landing-title {
+        font-size: 35vw;
+    }
+
+    .info-text-container {
+        width: 55%;
+    }
+}

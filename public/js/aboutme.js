@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    t1.to(".techstack-text h1", {
+        opacity: 1,
+        y: -30,
+        stagger: 0.3,
+        duration: 1,
+    });
+
     let t2 = gsap.timeline();
 
     t2.to(".introduction", {
@@ -22,12 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
             end: "bottom bottom",
             scrub: 1,
         },
-    });
-
-    t1.to(".techstack-text h1", {
-        opacity: 1,
-        y: -30,
-        stagger: 0.3,
-        duration: 1,
     });
 });

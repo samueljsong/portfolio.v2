@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectCards = document.querySelectorAll(".project-card");
 
     projectCards.forEach((project) => {
+        const title = project.querySelector(".project-information > h3");
+        const techs = project.querySelectorAll(".project-techstack > div");
         project.addEventListener("mouseover", () => {
-            const title = project.querySelector(".project-information > h3");
-
             gsap.to(project, {
                 y: -10,
                 ease: "none",
@@ -18,11 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 ease: "none",
                 duration: 0.1,
             });
+
+            gsap.to(
+                techs,
+                {
+                    color: "#afbda1",
+                    duration: 0.1,
+                },
+                0
+            );
         });
 
         project.addEventListener("mouseleave", () => {
-            const title = project.querySelector(".project-information > h3");
-
             gsap.to(project, {
                 y: 0,
                 duration: 0.1,
@@ -32,6 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 color: "#131313",
                 duration: 0.1,
             });
+
+            gsap.to(
+                techs,
+                {
+                    color: "#45624e",
+                    duration: 0.1,
+                },
+                0
+            );
         });
     });
 });
